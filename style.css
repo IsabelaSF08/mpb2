@@ -1,0 +1,216 @@
+/* Estilos Gerais do Corpo */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e6cda9; /* bege claro de fundo */
+    color: #222;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    /* Degradê de vermelho escuro para um vermelho claro */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #720303, #a84d4d);
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #811b1b 3px solid; /* Borda vermelha mais escura*/
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: #be7c7c; /* Vermelho quase branco no hover */
+    font-weight: bold;
+}
+
+/* Estilos do Conteúdo Principal */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(173, 157, 157, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #000000; /* Borda tracejada vermelha */
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2, h3, h4 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6d3a3a; /* Vermelho escuro para títulos */
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilos Específicos da Página Inicial */
+.branco {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.exemplo {
+    background-color: #f7d4d4; /* Vermelho bem clarinho para itens de exemplo */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.exemplo img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Estilos Específicos da Página de Compositores & Canções */
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+    
+.cartao {
+    background-color: #f7d4d4; /* Vermelho bem clarinho para cards de compositor */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    min-height: 600px;
+}
+
+.cartao img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #8b0909; /* Borda da imagem vermelho escuro */
+}
+
+.cartao ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.cartao ul li {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.cartao ul li::before {
+    content:" 🎧 "; /* Nota musical Unicode */
+    position: absolute;
+    left: 0;
+    color: #ec0e0e; /* Cor da nota musical vermelho escuro */
+}
+
+.musica1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.musica2 {
+    background-color: #f7dbdb; /* Vermelho bem clarinho para itens de canção */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    min-height: 200px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #4b0a0e; /* Botão vermelho */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #7e1b1b; /* Botão vermelho mais claro no hover */
+}
+
+
+/* Estilos do Rodapé */
+footer {
+    /* Degradê de vermelho escuro para vermelho claro */
+    background: linear-gradient(to right,  #720303, #a84d4d);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top:  #811b1b 3px solid; /* Borda vermelha mais escura */
+    border-radius: 0 0 8px 8px; /* Cantos inferiores arredondados para o rodapé */
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .exemplo, .lista, .musica1 {
+        grid-template-columns: 1fr;
+    }
+}
