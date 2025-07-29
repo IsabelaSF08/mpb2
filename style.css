@@ -63,10 +63,6 @@ section {
     border-bottom: 1px dashed #000000; /* Borda tracejada vermelha */
 }
 
-section:last-of-type {
-    border-bottom: none;
-}
-
 h2, h3, h4 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #6d3a3a; /* Vermelho escuro para títulos */
