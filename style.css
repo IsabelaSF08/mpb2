@@ -191,20 +191,3 @@ footer {
     border-top:  #811b1b 3px solid; /* Borda vermelha mais escura */
     border-radius: 0 0 8px 8px; /* Cantos inferiores arredondados para o rodapé */
 }
-
-/* Responsividade Básica */
-@media (max-width: 768px) {
-    main {
-        width: 95%;
-        padding: 15px;
-    }
-
-    header nav ul li {
-        display: block;
-        padding: 10px 0;
-    }
-
-    .exemplo, .lista, .musica1 {
-        grid-template-columns: 1fr;
-    }
-}
